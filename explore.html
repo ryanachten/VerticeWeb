@@ -1,0 +1,256 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertice</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="TemplateData/UnityProgress.js"></script>
+  </head>
+  <body>
+
+    <section class="vertice-menu-container" data-sticky-container >
+      <div class="vertice-menu sticky" data-sticky data-options="stickyOn: small">
+          <a href="index.html"><img id="header-logo" src="img/VerticeWeb_VerticeLogo.png"></a>
+          <a href="/index.html" id="overview-tab">overview</a>
+          <a href="/background.html" id="background-tab">background</a>
+          <a href="/explore.html" class="hide-for-small-only" id="explore-tab">explore</a>
+          <a href="/contact.html" id="contact-tab">contact</a>
+      </div>
+    </section>
+    
+    <div class="row">
+      <div class="small-12 small-centered column">
+         <canvas class="emscripten" id="canvas" oncontextmenu="event.preventDefault()" height="600px" width="960px"></canvas>
+      </div>
+    </div>
+
+    <div class="row" id="modal-opener-buttons">
+      <div class="small-4 small-centered">
+        <div class="expanded button-group">
+          <a class="button" data-open="navigation-content">navigation</a>
+          <a class="button" data-open="browse-content">browse</a>
+          <a class="button" data-open="collection-content">collections</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="tutorial-container reveal" id="navigation-content" data-reveal>
+      <div class="row column">
+        <h3 class="text-center">navigation</h3>
+      </div>
+      <div class="medium-up-5">
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow01.png" alt="">
+          <p>Move the observer left, forward, right, and back</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow02.png" alt="">
+          <p>Elevate the observer to see the whole domain</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow03.png" alt="">
+          <p>Access the Vertice menu, or return control of the keyboard and mouse to the browser</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow04.png" alt="">
+          <p>Direct the view of the observer with the mouse</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow05.png" alt="">
+          <p>Hold the right mouse button and use the scroll wheel to zoom</p>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+
+    </div>
+
+    <div class="tutorial-container reveal" id="browse-content" data-reveal>
+      <div class="row column">
+        <div class="small-1 small-centered">
+          <img src="img/VerticeWeb_HomeIcon_Browse.png" width="40px">
+        </div>
+      </div>
+      <div class="row column"><h3 class="text-center">browse</h3></div>
+
+      <div class="medium-up-5">
+        <h5 class="text-center">browsing for artefacts</h5>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow06.png" alt="">
+          <p class="text-left">Select a category in which to browse artefacts</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow07.png" alt="">
+          <p>Retrieve a list of headings in the chosen category</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow08.png" alt="">
+          <p>Filter by selecting the headings of interest</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow09.png" alt="">
+          <p>Choose <em>Done</em> to apply the filter</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow10.png" alt="">
+          <p>Scan the horizon for bubbles indicating the position of artefacts</p>
+        </div>
+      </div>
+      <div class="medium-up-5">
+        <h5 class="text-center">viewing artefact information</h5>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow12.png" alt="">
+          <p>Approach an artefact of interest in the scene</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow13.png" alt="">
+          <p>The artefact information panel for the artefact of interest becomes visible</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow14.png" alt="">
+          <p>Toggle artefact information panels to view only the information of interest</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow15.png" alt="">
+          <p>Metadata, derived from the institution's catalogue, describes the artefact in view</p>
+        </div>
+        <div class="navigation-instruction column">
+          <img src="img/tutorial/VerticeWeb_TutIcon_Brow16.png" alt="">
+          <p>Some artefacts are associated with images pertaining to the original artefact</p>
+        </div>
+      </div>
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+
+    <div class="tutorial-container reveal" id="collection-content" data-reveal>
+      <div class="row column">
+        <div class="small-1 small-centered">
+          <img src="img/VerticeWeb_HomeIcon_Collect.png" width="40px">
+        </div>
+      </div>
+      <div class="row column"><h3 class="text-center">collections</h3></div>
+      <div class="row">
+        <div class="medium-6 column">
+          <h5 class="text-center">navigating between scenes</h5>
+          <div class="medium-up-2">
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll01.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll02.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+          </div>
+        </div>
+        <div class="medium-6 column">
+          <h5 class="text-center">loading a collection</h5>
+          <div class="medium-up-2">
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll03.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll04.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-6 column">
+          <h5 class="text-center">moving an artefact</h5>
+          <div class="medium-up-2">
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll05.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll06.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+          </div>
+        </div>
+        <div class="medium-6 column">
+          <h5 class="text-center">scaling an artefact</h5>
+          <div class="medium-up-2">
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll07.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Brow04.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="medium-10 medium-centered column">
+          <h5 class="text-center">rotating an artefact</h5>
+          <div class="medium-up-3">
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Coll08.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Brow04.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+            <div class="navigation-instruction column">
+              <img src="img/tutorial/VerticeWeb_TutIcon_Brow05.png" alt="">
+              <p>Merry their far had widen was. Concerns no in expenses raillery formerly. </p>
+            </div>
+
+        </div>
+        </div>
+        </div>
+
+      <button class="close-button" data-close aria-label="Close modal" type="button"><span aria-hidden="true">&times;</span></button>
+    </div>
+
+    <div class="row">
+      <div class="medium-10 medium-centered column">
+        <h2 class="text-center">explore vertice</h2>
+        <p class="text-center">The Vertice system is comprised of two parts; an editor and a viewer.</p>
+        <div class="medium-6 column">
+          <h3 class="text-center">editor</h3>
+          <p>The editor is a standalone Vertice build which runs on a user local Windows, OS X, or Linux computer. Unique to this version of Vertice is the Import scene, which provides curators and other museum collection administrators with an ability to control which new artefacts are imported into the system, how metadata attribution is used to describe them, and what contextual media is associated with them. Furthermore, the editor version of Vertice also provides curators with an ability to create new collections of artefacts for public viewership. Visit our GitHub page to download the editor, or contribute to its development.</p>
+
+        </div>
+
+        <div class="medium-6 column">
+          <h3 class="text-center">viewer</h3>
+          <p>The viewer is a WebGL version of Vertice, allowing it to be accessed via the browser and integrated into existing institution web platforms. As the name implies, the viewer is primarily intended to allow general users with access to institutional artefacts outside of an institution’s walls. Since this version runs in the browser, user’s don’t need to install anything, and because it uses WebGL, no plugins are required. However, you do need to run this on compatible browser (Chrome or Firefox work best - see here for further information), and you will need to be on a laptop or desktop (mobile devices won’t work). Visit our GitHub page to download the viewer, or contribute to its development.</p>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script type='text/javascript'>
+      var Module = {
+        TOTAL_MEMORY: 805306368,
+        errorhandler: null,			// arguments: err, url, line. This function must return 'true' if the error is handled, otherwise 'false'
+        compatibilitycheck: null,
+        dataUrl: "Release/WebGL.data",
+        codeUrl: "Release/WebGL.js",
+        memUrl: "Release/WebGL.mem",
+      };
+    </script>
+    <script src="Release/UnityLoader.js"></script>
+    <script>
+    $('vertice-menu a').removeClass('selected');
+    $('#explore-tab').addClass('selected');
+    </script>
+	</body>
+</html>

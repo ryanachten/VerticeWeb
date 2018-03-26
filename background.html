@@ -1,0 +1,222 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertice</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  </head>
+  <body>
+
+    <section class="vertice-menu-container" data-sticky-container >
+      <div class="vertice-menu sticky" data-sticky data-options="stickyOn: small">
+          <a href="index.html"><img id="header-logo" src="img/VerticeWeb_VerticeLogo.png"></a>
+          <a href="/index.html" id="overview-tab">overview</a>
+          <a href="/background.html" id="background-tab">background</a>
+          <a href="/explore.html" class="hide-for-small-only" id="explore-tab">explore</a>
+          <a href="/contact.html" id="contact-tab">contact</a>
+      </div>
+    </section>
+    
+
+
+    <section class="design-section background-section" hidden >
+        <section class="design">
+        
+              <div class="row">
+                <div class="small-10 small-offset-1 medium-9 medium-centered column">
+                  <h1 class="text-center">interaction design</h1>
+        
+                  <p class="text-left">Whether you’re seeking textual information, images, or videos; accessing digitally archived information traditionally takes place in a two-dimensional space. Since these types of media are comprised of two dimensions, this paradigm is idea. However, to apply the same approach to representing digital three-dimensional artefacts would preclude interfaces from leveraging opportunities this third dimension makes available</p>
+                </div>
+              </div>
+            </section>
+        
+            <section class="precedents">
+              <div class="row">
+                <div class="small-10 small-offset-1 medium-9 medium-centered column">
+                  <h2 class="text-center">precedents &amp; inspiration</h2>
+                  <p class="text-left">Interacting with archived digital 3D media isn’t an entirely new concept; there are a number of well established precedents which inspired our resulting approach in various ways. None of these case studies, however, suitably catered for the needs of the Vertice project – resulting in the development of our own novel approaches to 3D archive interaction</p>
+                </div>
+              </div>
+        
+              <section class="precedents-list">
+                <div class="row small-up-1 medium-up-3 small-10">
+                  <div class="precedent column">
+                    <h3 class="text-center">sketchfab</h3>
+                    <p class="text-left">Sketchfab is 3D model viewer host popular amongst 3D content creators, as well as a few forward-thinking cultural institutions (such as the British Museum). Sketchfab’s purpose differs from Vertice in that it expressly allows for viewing singular 3D models at once, and does not facilitate archival functionality such as browsing and artefactual metadata</p>
+                  </div>
+                  <div class="precedent column">
+                    <h3 class="text-center">scanview</h3>
+                    <p class="text-left">ScanView is rendering system developed by Stanford University for viewing high resolution 3D media. ScanView’s client/server rendering system protects 3D content from potential hacking by only serving 2D renders of the user’s current perspective instead of the entire 3D model. Similar to SktechFab, the purpose of this system differs from that of Vertice by prioritising the viewing of singular models without accounting for how the treatment of a 3D environment might aid in communicating and interacting with artefactual information</p>
+                  </div>
+                  <div class="precedent column">
+                    <h3 class="text-center">smithsonian x 3d</h3>
+                    <p class="text-left">An important precedent to this project is the Smithsonian X 3D Explorer; a repository for various enquiries into 3D cultural media conducted by Smithsonian researchers, curators, educators, and digitisation office. Smithsonian provided due inspiration into how 3D space may aid in the contextualisation of artefacts and communication of information through their use of virtual tours. Again the purpose of this project differs from Vertice, since it limits its content to media produced internally, without enabling software downloads or public contribution
+                  </div>
+                </div>
+              </section>
+            </section>
+        
+        
+            <section class="design-blurb">
+              <div class="row small-up-1 medium-up-2 small-10 feature-image">
+                <div class="column">
+                  <h3 class="text-center">vertice interaction model</h3>
+                  <p>Moving from a 2D browsing model into a 3D counterpart presents a number of challenges and opportunities for archive interaction design. </p>
+        
+                  <p>A 3D digital artefact is comprised of a combination of 2D information (albedo texture, UV maps, normal maps etc), and 3D information (polygon mesh); necessitating a larger amount of data to be served to the user when browsing 3D archives. Consequently, fewer number of artefacts can be displayed to the user at one time without compromising software user experience.</p>
+        
+                  <p>Differences in media spatiality also prevent existing 2D archive browsing models from being mapped effectively to the Vertice interaction paradigm. Widely adopted models, such as image grids commonly featured in digital collections, lean upon representing 2D content, which would neglect interaction opportunities within a 3D context.</p>
+        
+                  <p>Instead, new models for exploring 3D digital archive content were devised during Vertice’s development. Vertice allows users to browse various metadata attributes and return relevant artefacts within a three-dimensional environment. The WASD computer game standard was adopted to allow simple navigation through the 3D environment. Since this is widely used in computer games we look to reduce novice user learning curves whilst providing a novel form of archive interaction. Upon reaching an artefact, Vertice uses raycasting techniques to display users with contextual information about the artefact.</p>
+        
+                  <p>Vertice has currently been constructed for standalone (for Windows, OS X, and Linux machines) and WebGL deployment and has the potential to be reconfigured for use through an array of platforms. Built using the gaming engine, Unity 3D, Vertice could be deployed for engagement in augmented or virtual realities, and even common gaming consoles such as PlayStation or XBox; opening up numerous opportunities for novel forms of archive interaction</p>
+                </div>
+        
+                <div class="column">
+                  <img class="show-for-medium" src="img/hero_penguin.jpg" style="float: right; padding-top: 50px;">
+                </div>
+              </div>
+            </section>
+    </section>
+    <section class="metadata-section background-section" >
+    <section class="metadata">
+    
+          <div class="row">
+            <div class="small-10 small-offset-1 medium-9 medium-centered column">
+              <h1 class="text-center">metadata</h1>
+    
+              <p class="text-left">A key feature of Vertice that distinguishes it from more-general 3D viewers is its metadata model – in the same way that physical artefacts are represented in a catalogue, every digital artefact in Vertice is associated with metadata that attests to its structure and context</p>
+            </div>
+          </div>
+        </section>
+    
+        <section class="precedents">
+          <div class="row">
+            <div class="small-10 small-offset-1 medium-9 medium-centered column">
+              <h2 class="text-center">precedents &amp; inspiration</h2>
+              <p class="text-left">Owing to the variety of use cases in this field, there is no obvious standard for modelling the metadata associated with digitised artefacts. As such, the Vertice metadata model draws inspiration from a number of relevant projects and initiatives</p>
+            </div>
+          </div>
+    
+          <section class="precedents-list">
+            <div class="row small-up-1 medium-up-3 small-10">
+              <div class="precedent column">
+                <h3 class="text-center">3d-icons</h3>
+                <p class="text-left">3D-Icons is a European Commission-funded project that has contributed research into the acquisition, digitisation, and publication of 3D archaeological material. The metadata model adopted in the 3D-Icon’s CARARE aggregation service was of specific interest to the Vertice project, as it too aimed to provide a system for describing 3D digital artefacts</p>
+              </div>
+              <div class="precedent column">
+                <h3 class="text-center">cidoc crm</h3>
+                <p class="text-left">The ICOM International Committee for Documentation (CIDOC)’s Conceptual Reference Model (CRM) is an approach to metadata that emphasises the encoding of implicit and explicit concepts and relationships between artefacts. CIDOC-CRM is a popular ontology that supports the collection management systems of large museums having complex systems of arrangement</p>
+              </div>
+              <div class="precedent column">
+                <h3 class="text-center">dublin core</h3>
+                <p class="text-left">The Dublin Core Metadata Initiative (DCMI) provides a small collection of elements and definitions for describing an arbitrary resource. The genericity, interpretability and popularity of Dublin Core makes it a staple of many collection management systems
+              </div>
+            </div>
+          </section>
+        </section>
+    
+    
+        <section class="metadata-blurb">
+          <div class="row small-up-1 medium-up-2 small-10 feature-image">
+            <div class="column">
+              <h3 class="text-center">vertice metadata</h3>
+              <p>Vertice is not a collection management system. Instead, it is positioned to consume – from existing catalogues – a subset of the descriptive, structural, and administrative metadata that is relevant to understanding an artefact’s context, provenance, and technical details. This data populates Vertice’s metadata model, which Vertice uses to organise and describe the artefacts that have been imported into the system.</p>
+    
+              <p>The Vertice metadata model leans on the Dublin Core Metadata Element Set, which prescribes fifteen units of information that are fundamental to describing an arbitrary resource. Vertice arranges these units of information to attest to the identity of an artefact, and the validity of its digital representation.</p>
+    
+              <p>Crucially, the ubiquity and simplicity of Dublin Core maximises the interpretability and interoperability of data stored and presented by Vertice</p>
+            </div>
+    
+            <div class="column">
+              <img class="show-for-medium" src="img/Vertice_WebsiteImages_BackgroundPage01.png" style="float: right; padding-top: 50px;">
+            </div>
+          </div>
+        </section>
+    </section>
+    
+    <section class="technology-section background-section" hidden>
+        <section class="metadata">
+        
+              <div class="row">
+                <div class="small-10 small-offset-1 medium-9 medium-centered column">
+                  <h1 class="text-center">technology</h1>
+        
+                  <p class="text-left">The World Wide Web is a powerful medium for connecting people with networks of knowledge. Whereas these knowledge networks have traditionally consisted of hyperlinked text documents, Vertice leverages sophisticated new web technologies that extend the capabilities of the World Wide Web beyond linked documents towards rich interactive experiences.</p>
+                </div>
+              </div>
+            </section>
+        
+            <section class="precedents">
+              <div class="row">
+                <div class="small-10 small-offset-1 medium-9 medium-centered column">
+                  <h2 class="text-center">precedents &amp; inspiration</h2>
+                  <p class="text-left">Owing to the variety of use cases in this field, there is no obvious standard for modelling the metadata associated with digitised artefacts. As such, the Vertice metadata model draws inspiration from a number of relevant projects and initiatives</p>
+                </div>
+              </div>
+        
+              <section class="precedents-list">
+                <div class="row small-up-1 medium-up-3 small-10">
+                  <div class="precedent column">
+                    <h3 class="text-center">webgl</h3>
+                    <p class="text-left">WebGL is an open-source graphics library that is capable of rendering complex 3D environments in a web browser without the use of plug-ins or proprietary technology. The Vertice viewer is implemented in WebGL, and can be run in any contemporary web browser, and embedded within any modern website.</p>
+                  </div>
+                  <div class="precedent column">
+                    <h3 class="text-center">hyperlinking</h3>
+                    <p class="text-left">Hyperlinking is fundamental to the World Wide Web, allowing any resource to link to another resource of interest. Vertice is designed with this principle in mind, and envisions information seekers engaging with artefacts in its 3D environment, and following links from within that environment to other resources of interest (the catalogue, a downloadable 3D model, an artist’s website).</p>
+                  </div>
+                  <div class="precedent column">
+                    <h3 class="text-center">emerging paradigms</h3>
+                    <p class="text-left">There are a plethora of exciting technologies on the horizon that will likely change the way that information seekers expect to engage with cultural artefacts: it is conceivable that augmented reality, virtual reality, and 3D printing will all provide opportunities for new modes of discovery. Vertice has been focused on establishing a sound desktop experience, but its functionality could be extended to incorporate these new technologies.
+                  </div>
+                </div>
+              </section>
+            </section>
+        
+        
+            <section class="metadata-blurb">
+              <div class="row small-up-1 medium-up-2 small-10 feature-image">
+                <div class="column">
+                  <h3 class="text-left">vertice technology</h3>
+                  <p>Vertice is built using the Unity3D gaming engine. Unity3D is a mature platform for developing 3D games, and, is capable of targeting mobile devices, augmented and virtual reality devices, televisions, and gaming consoles.</p>
+        
+                  <p>Currently, Vertice comprises two tools: the standalone editor – which can be used to import artefacts, curate collections, and associate metadata with artefacts – and the WebGL viewer, which can be incorporated into an institution’s website and accessed by visitors over the Internet.</p>
+        
+                  <p>In addition to providing a presentation medium for 3D artefacts, Vertice leverages its metadata model to capture the relationships to other sources of contextual information. Institutions will position Vertice to evoke intrigue through its unique interaction model, and then guide information seekers to other pertinent resources.</p>
+                </div>
+        
+                <div class="column">
+                  <img class="show-for-medium" src="img/hero_skull.jpg" style="float: right; padding-top: 50px;">
+                </div>
+              </div>
+            </section>
+    </section>
+
+    <div class="row">
+      <div class="small-8 small-centered columns">
+        <div class="expanded button-group">
+          <a class="button" onclick="showMetadata()">metadata</a>
+          <a class="button" onclick="showDesign()">design</a> 
+          <a class="button" onclick="showTechnology()">technology</a>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/smooth-scroll.js/dist/js/smooth-scroll.js"></script>
+    <script>smoothScroll.init();</script>
+    <script src="js/app.js"></script>
+
+    <script>
+    $('vertice-menu a').removeClass('selected');
+    $('#background-tab').addClass('selected');
+    </script>
+	</body>
+</html>

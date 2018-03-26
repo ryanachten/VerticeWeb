@@ -1,0 +1,55 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertice</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+  </head>
+  <body>
+
+    <section class="vertice-menu-container" data-sticky-container >
+      <div class="vertice-menu sticky" data-sticky data-options="stickyOn: small">
+          <a href="index.html"><img id="header-logo" src="img/VerticeWeb_VerticeLogo.png"></a>
+          <a href="/index.html" id="overview-tab">overview</a>
+          <a href="/background.html" id="background-tab">background</a>
+          <a href="/explore.html" class="hide-for-small-only" id="explore-tab">explore</a>
+          <a href="/contact.html" id="contact-tab">contact</a>
+      </div>
+    </section>
+    
+
+    <section class="hero">
+      <img src="img/Contact_Hero.png">
+    </section>
+
+    <div class="row">
+      <div class="small-10 medium-8 small-centered column">
+        <div id="contact-blurb">
+          <p>Vertice was developed by Ryan Achten and Tim Bathgate between June and November, 2016. </p>
+
+          <p>Vertice was fortunate to receive support and funding from Victoria University of Wellington’s commercialisation office, VicLink, alongside the Kiwi Innovation Network (KiwiNet). Additionally, the advice and mentorship provided by Michael Elwood Smith from Loomio.</p>
+
+          <p>The content on this website can be freely used within the scope of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. If you would like to use this in  a commercial context, please contact…</p>
+
+          <p>This version of the software was based upon original thesis research by Ryan Achten as part of his submission for the Master of Design Innovation degree at Victoria University of Wellington, supervised by Walter Langelaar. View more about this research here.</p>
+
+          <p>Whether you’re a curator, academic, or simply have something to say about the Vertice project, we are extremely interested to hear your opinions. Contact Ryan at ryan@vertice.com</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+    $('vertice-menu a').removeClass('selected');
+    $('#contact-tab').addClass('selected');
+    </script>
+	</body>
+</html>
